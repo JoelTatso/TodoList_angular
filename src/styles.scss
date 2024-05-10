@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+
+@use './app/components/shared/form.style';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+body{
+    background-color: rgba(gray,.2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input,input:active,input:hover,input:focus{
+ box-shadow: none !important;
+ border: none !important;
+ border-color:transparent !important;
+ padding-left: 5px;
+}
+
+.toolbar-btn{
+    border:none;
+    padding:10px;
+    border-radius:12px;
+    cursor:pointer;
+    background-color:rgba(black,.8);
+    color:white;
+    font-size: .8rem;
+    transition: all .3s ease;
+
+    &:hover{
+      background-color:rgba(black,.9);
+      transform:scale(1.05)
+    }
+
+  }
+
+  button:disabled{
+    background: rgba(black,.2);
+    &:hover{
+        background: rgba(black,.2);
+    }
+  }
